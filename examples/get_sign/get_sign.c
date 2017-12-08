@@ -14,7 +14,7 @@ int get_sign(int x) {
      return 1;
 } 
 
-int main() {
+int main(int argc, char const *argv[]) {
   int a;
   klee_make_symbolic(&a, sizeof(a), "a");
   return get_sign(a);
